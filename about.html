@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Luscious Dessertz LLC</title>
+  <meta name="description" content="The story behind Luscious Dessertz LLC — handcrafted desserts made with love in Adrian, Michigan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav id="main-nav">
+  <a class="nav-logo" href="index.html">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html" aria-current="page">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="gallery.html" onclick="closeMobile()">Gallery</a>
+  <a href="about.html" aria-current="page" onclick="closeMobile()">About</a>
+  <a href="visit.html" onclick="closeMobile()">Visit</a>
+</div>
+
+<main id="main-content">
+
+  <!-- About hero banner — social media photo -->
+  <div class="about-hero">
+    <img src="https://i.postimg.cc/yYjMZt0B/597808410-1660027912041155-8803360308593270931-n.jpg"
+         alt="Luscious Dessertz creations" />
+    <div class="about-hero-overlay">
+      <p class="section-label">About Us</p>
+      <h1>Made with <em>heart.</em><br />Served with grace.</h1>
+    </div>
+  </div>
+
+  <!-- Story section — owner photo in split layout -->
+  <section class="about-section">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal from-left">
+        <img src="https://i.postimg.cc/yYjMZt0B/597808410-1660027912041155-8803360308593270931-n.jpg"
+             alt="Owner and family at Luscious Dessertz" loading="lazy" />
+      </div>
+      <div class="about-text reveal from-right">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-heading">A labor of <em>love.</em></h2>
+        <div class="about-body">
+          <p>
+            Luscious Dessertz LLC is more than a dessert shop —
+            it's a <strong>labor of love</strong> rooted in Adrian, Michigan.
+            We believe that the finest moments in life deserve something extraordinary,
+            and that's exactly what we pour into every single creation.
+          </p>
+          <p>
+            Our desserts are handcrafted fresh, made with quality ingredients,
+            and presented with the kind of care you'd give to something truly precious.
+            From our <strong>signature creations</strong> to rotating seasonal specials,
+            every visit to Luscious Dessertz is an experience worth returning for.
+          </p>
+          <p>
+            We are a <strong>walk-in boutique</strong> — no menus online, no rush orders.
+            Come as you are, discover what's fresh that day,
+            and let us take care of the rest.
+          </p>
+        </div>
+        <p class="about-signature">— Luscious Dessertz LLC</p>
+        <div style="margin-top:2.5rem;" class="reveal reveal-delay-2">
+          <a class="btn" href="visit.html">Find Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="about-stats">
+    <div class="stats-grid">
+      <div class="reveal">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Handcrafted Fresh</div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="stat-number">8+</div>
+        <div class="stat-label">Signature Creations</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="stat-number">Walk&#8209;in</div>
+        <div class="stat-label">No Reservations Needed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bible verse -->
+  <section class="about-verse">
+    <blockquote class="reveal">
+      "As the new heavens and the new earth that I make will endure before me," declares the Lord,
+      "so will your name and descendants endure."
+      <cite>Isaiah 66:22</cite>
+    </blockquote>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz" />
+  </div>
+  <ul class="footer-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <div class="footer-social">
+    <a href="https://facebook.com/lusciousdessertz" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      lusciousdessertz
+    </a>
+  </div>
+  <blockquote class="footer-verse">
+    "As the new heavens and the new earth that I make will endure before me," declares the Lord,
+    "so will your name and descendants endure."
+    <cite>Isaiah 66:22</cite>
+  </blockquote>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Luscious Dessertz LLC &nbsp;&mdash;&nbsp;</span>
+    <span>1114 S. Winter St. D3, Adrian, MI &nbsp;&mdash;&nbsp;</span>
+    <span>Design by Austin D. Web Design</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

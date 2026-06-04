@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Luscious Dessertz LLC</title>
+  <meta name="description" content="Browse our full gallery of handcrafted desserts — cheesecakes, cakes, cupcakes, cake pops, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav id="main-nav" class="scrolled">
+  <a class="nav-logo" href="index.html">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="gallery.html" aria-current="page" onclick="closeMobile()">Gallery</a>
+  <a href="about.html" onclick="closeMobile()">About</a>
+  <a href="visit.html" onclick="closeMobile()">Visit</a>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="event.stopPropagation();closeLightbox()" aria-label="Close">&#10005;</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<main id="main-content">
+
+  <div class="page-header">
+    <p class="section-label">The Collection</p>
+    <h1 class="section-heading">Every dessert,<br /><em>a work of art.</em></h1>
+  </div>
+
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <div class="g-card reveal" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/gcCMs7Lc/IMG-5319.jpg" alt="Strawberry cheesecake cones" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Strawberry Cheesecake Cones</span></div>
+      </div>
+      <div class="g-card reveal reveal-delay-1" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/W4G9Q1GL/IMG-5301.jpg" alt="Cherry cheesecake" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Cherry Cheesecake</span></div>
+      </div>
+      <div class="g-card reveal reveal-delay-2" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/dtg43y6z/IMG-5302.jpg" alt="Cherry cheesecake tacos" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Cherry Cheesecake Tacos</span></div>
+      </div>
+      <div class="g-card reveal" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/43P667vC/IMG-5305.jpg" alt="Strawberry crumble cupcakes" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Strawberry Crumble Cupcakes</span></div>
+      </div>
+      <div class="g-card reveal reveal-delay-1" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/0yqDhdc9/IMG-5304.jpg" alt="Powdered sugar brownies" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Powdered Sugar Brownies</span></div>
+      </div>
+      <div class="g-card reveal reveal-delay-2" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/MXJf2q0r/IMG-5317.jpg" alt="Strawberry crumble cake" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Strawberry Crumble Cake</span></div>
+      </div>
+      <div class="g-card reveal" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/R0K84Rz2/IMG-5318.jpg" alt="Apple cheesecake tacos" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Apple Cheesecake Tacos</span></div>
+      </div>
+      <div class="g-card reveal reveal-delay-1" onclick="openLightbox(this)">
+        <img src="https://i.postimg.cc/DzvpsbJ0/IMG-5303.jpg" alt="Chocolate and white cake pops" loading="lazy" />
+        <div class="gallery-caption-overlay"><span>Chocolate &amp; White Cake Pops</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz" />
+  </div>
+  <ul class="footer-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <div class="footer-social">
+    <a href="https://facebook.com/lusciousdessertz" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      lusciousdessertz
+    </a>
+  </div>
+  <blockquote class="footer-verse">
+    "As the new heavens and the new earth that I make will endure before me," declares the Lord,
+    "so will your name and descendants endure."
+    <cite>Isaiah 66:22</cite>
+  </blockquote>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Luscious Dessertz LLC &nbsp;&mdash;&nbsp;</span>
+    <span>1114 S. Winter St. D3, Adrian, MI &nbsp;&mdash;&nbsp;</span>
+    <span>Design by Austin D. Web Design</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function openLightbox(card) {
+    const img = card.querySelector('img');
+    if (!img) return;
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

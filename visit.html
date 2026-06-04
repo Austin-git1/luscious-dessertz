@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit — Luscious Dessertz LLC</title>
+  <meta name="description" content="Find Luscious Dessertz LLC at 1114 S. Winter St. D3, Adrian, MI. Open Tuesday–Friday 12–8pm. Walk-ins only." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav id="main-nav" class="scrolled">
+  <a class="nav-logo" href="index.html">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html" aria-current="page">Visit</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="gallery.html" onclick="closeMobile()">Gallery</a>
+  <a href="about.html" onclick="closeMobile()">About</a>
+  <a href="visit.html" aria-current="page" onclick="closeMobile()">Visit</a>
+</div>
+
+<main id="main-content">
+
+  <div class="visit-hero">
+    <p class="section-label reveal">Come Find Us</p>
+    <h1 class="section-heading reveal reveal-delay-1">
+      In the heart of<br /><em>Adrian, Michigan.</em>
+    </h1>
+  </div>
+
+  <div class="visit-map-section">
+    <div class="visit-map">
+      <iframe
+        loading="lazy"
+        title="Luscious Dessertz location map"
+        src="https://maps.google.com/maps?q=1114+S+Winter+St+Adrian+MI&output=embed"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="visit-details">
+      <div class="reveal">
+        <p class="section-label">Location &amp; Contact</p>
+        <h2 class="section-heading" style="font-size:clamp(2rem,3.5vw,3rem);">All the details<br /><em>you need.</em></h2>
+      </div>
+      <div class="visit-detail reveal reveal-delay-1">
+        <span class="visit-detail-label">Address</span>
+        <span class="visit-detail-value">1114 S. Winter St. D3<br />Adrian, MI</span>
+      </div>
+      <div class="visit-detail reveal reveal-delay-2">
+        <span class="visit-detail-label">Phone</span>
+        <span class="visit-detail-value"><a href="tel:+15177599208">(517) 759-9208</a></span>
+      </div>
+      <div class="visit-detail reveal reveal-delay-3">
+        <span class="visit-detail-label">Social</span>
+        <span class="visit-detail-value">
+          <a href="https://facebook.com/lusciousdessertz" target="_blank" rel="noopener">
+            facebook.com/lusciousdessertz
+          </a>
+        </span>
+      </div>
+      <div class="reveal reveal-delay-4">
+        <div class="walkin-badge">Walk-ins only &mdash; no online ordering</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="visit-hours-section">
+    <div class="visit-hours-inner">
+      <div class="hours-header reveal">
+        <p class="section-label">Hours</p>
+        <h2 class="section-heading">When we're<br /><em>open.</em></h2>
+      </div>
+      <table class="hours-table reveal reveal-delay-1" aria-label="Business hours">
+        <tbody>
+          <tr class="hours-closed"><td>Monday</td><td>Closed</td></tr>
+          <tr><td>Tuesday</td><td>12:00 pm – 8:00 pm</td></tr>
+          <tr><td>Wednesday</td><td>12:00 pm – 8:00 pm</td></tr>
+          <tr><td>Thursday</td><td>12:00 pm – 8:00 pm</td></tr>
+          <tr><td>Friday</td><td>12:00 pm – 8:00 pm</td></tr>
+          <tr><td>Saturday</td><td>Select Saturdays — follow us on Facebook</td></tr>
+          <tr class="hours-closed"><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <div class="reveal reveal-delay-2" style="margin-top:3rem;">
+        <a class="btn" href="https://facebook.com/lusciousdessertz" target="_blank" rel="noopener">
+          Follow on Facebook for Saturday Updates
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">
+    <img src="https://i.postimg.cc/fTFck8Pv/9VHvm-SE-Imgur.jpg" alt="Luscious Dessertz" />
+  </div>
+  <ul class="footer-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <div class="footer-social">
+    <a href="https://facebook.com/lusciousdessertz" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      lusciousdessertz
+    </a>
+  </div>
+  <blockquote class="footer-verse">
+    "As the new heavens and the new earth that I make will endure before me," declares the Lord,
+    "so will your name and descendants endure."
+    <cite>Isaiah 66:22</cite>
+  </blockquote>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Luscious Dessertz LLC &nbsp;&mdash;&nbsp;</span>
+    <span>1114 S. Winter St. D3, Adrian, MI &nbsp;&mdash;&nbsp;</span>
+    <span>Design by Austin D. Web Design</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
