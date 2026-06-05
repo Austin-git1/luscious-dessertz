@@ -44,8 +44,7 @@ a, button, .spec-card, .teaser-item, .g-card, .nav-logo { cursor: pointer; }
     scroll-behavior: auto !important;
   }
   .hero-bg-img { transform: scale(1); }
-  .hero-scroll { opacity: 0.45; animation: none; }
-  .scroll-line, .walkin-badge::before { animation: none; opacity: 1; }
+  .walkin-badge::before { animation: none; opacity: 1; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
 
@@ -201,21 +200,6 @@ nav.scrolled { background: rgba(13,13,13,0.93); backdrop-filter: blur(14px); pad
   transform: translateY(-16px) !important;
   transition: opacity 0.5s ease, transform 0.5s ease !important;
 }
-.hero-scroll {
-  position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-  opacity: 0; animation: fadeInScroll 1s ease 1.6s forwards; z-index: 2;
-}
-@keyframes fadeInScroll { to { opacity: 0.45; } }
-.hero-scroll span {
-  font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--cream);
-}
-.scroll-line {
-  width: 1px; height: 44px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
-}
-@keyframes scrollPulse { 0%,100% { opacity: 0.4; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.15); } }
 
 /* ─── Ticker ────────────────────────────────────────────────── */
 .ticker {
@@ -595,7 +579,6 @@ footer {
   .hamburger { display: flex; }
   .nav-title { font-size: 0.95rem; }
   .hero-content { padding: 0 1.5rem 4.5rem; }
-  .hero-scroll { display: none; }
   .intro-strip { grid-template-columns: 1fr; padding: 5rem 1.5rem; gap: 3rem; }
   .intro-image-wrap { order: -1; }
   .intro-image-wrap::before { display: none; }
